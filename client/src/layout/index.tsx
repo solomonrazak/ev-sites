@@ -5,12 +5,13 @@ import { Outlet } from 'react-router-dom';
 
 const Layout = () => {
   return (
-    <div className='flex'>
-        <div className="w-20%">
+    <div className='flex w-full h-full'>
+        <div className="w-20% border-r border-white">
             <Sidebar />
         </div>
         <div className="w-80%">
-            <Navbar />
+            <div className='w-full'> <Navbar /></div>
+           
             <main>
                 <Outlet />
             </main>
