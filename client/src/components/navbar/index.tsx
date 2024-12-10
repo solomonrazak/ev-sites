@@ -17,8 +17,8 @@ const Navbar: React.FC = () => {
   const initial = name.charAt(0);
 
   return (
-    <div className="p-2 border-b flex justify-between border-white w-full">
-      <p>{currentPage}</p>
+    <div className="py-2 px-4 border-b flex justify-between border-white w-full">
+      <p className="font-medium">{currentPage}</p>
       <div className="flex items-center gap-2">
         <div className="w-7 h-7 flex justify-center items-center font-medium bg-green-400 text-white rounded-full border border-white">{initial}</div>
         <p className="font-medium">{name}</p>

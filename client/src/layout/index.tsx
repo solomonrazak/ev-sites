@@ -11,7 +11,7 @@ const Layout:React.FC = () => {
       </div>
       <div className="w-[80%]">
         <Navbar />
-        <main>
+        <main className="p-5">
           <Outlet />
         </main>
       </div>
