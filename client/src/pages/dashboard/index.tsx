@@ -1,8 +1,11 @@
 import React from 'react'
+import TotalCharges from '../../components/totalCharges';
 
 const Dashboard: React.FC = () => {
   return (
-    <div>dashboard</div>
+    <div>
+      <TotalCharges />
+    </div>
   )
 }
 
