@@ -10,7 +10,7 @@ interface ICustomCardProps {
 
 const CustomCard: React.FC<ICustomCardProps> = ({name, value, percentage, icon}) => {
   return (
-    <div className="bg-[#333333] rounded-md h-56 flex flex-col justify-between p-3">
+    <div className="bg-[#333333] rounded-md h-60 flex flex-col justify-between p-3">
         <div>
             <div>{icon}</div>
             <p>{name}</p>
