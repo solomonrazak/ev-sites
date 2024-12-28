@@ -2,7 +2,7 @@ import React from 'react';
 
 const TotalCharges: React.FC = () => {
   return (
-    <div className="bg-[#333333] w-[500px] h-[400px] flex flex-col justify-between p-2 rounded-md">
+    <div className="bg-[#333333] h-[400px] flex flex-col justify-between p-2 rounded-md m-0">
         <div>
             <p className="font-medium">Total Charges</p>
             <p className="font-normal text-[10px] text-gray-400">01 January 2024 - Date</p>

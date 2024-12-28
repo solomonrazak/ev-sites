@@ -5,11 +5,11 @@ import { Outlet } from "react-router-dom";
 
 const Layout:React.FC = () => {
   return (
-    <div className="flex w-full h-full">
-      <div className="w-[20%] border-r border-white">
+    <div className="flex w-full h-screen min-h-full">
+      <div className="w-[16%] border-r border-white h-screen">
         <Sidebar />
       </div>
-      <div className="w-[80%]">
+      <div className="w-[84%]">
         <Navbar />
         <main className="p-5">
           <Outlet />

@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 const Sidebar: React.FC = () => {
   return (
-    <div className="p-4 h-full flex flex-col">
+    <div className="p-4 h-full flex flex-col min-h-full">
       <p className="text-center pb-4">Logo</p>
       <div className="flex-grow">
         {/* flex-grow so it can occupy the full length so logout can stay at the bottom */}
