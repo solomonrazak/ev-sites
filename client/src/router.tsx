@@ -3,6 +3,7 @@ import Layout from "./layout";
 import Dashboard from "./pages/dashboard";
 import Customers from "./pages/customers";
 import ChargingPoints from "./pages/chargingPoints";
+import Wallet from "./pages/wallet";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/charging-points",
         element: <ChargingPoints />,
+      },
+      {
+        path: "/wallet",
+        element: <Wallet />,
       },
     ],
   },

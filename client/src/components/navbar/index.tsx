@@ -8,6 +8,7 @@ const Navbar: React.FC = () => {
     "/dashboard": "Dashboard",
     "/customers": "Customers",
     "/charging-points": "Charging Points",
+    "/wallet": "Wallet",
   };
 
   // Get the name based on the current path
