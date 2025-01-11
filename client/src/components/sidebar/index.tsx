@@ -61,7 +61,7 @@ const Sidebar: React.FC = () => {
             }
           >
             <div className="flex gap-2 items-center">
-            <IoWalletOutline />
+              <IoWalletOutline />
               <p>Wallet</p>
             </div>
           </NavLink>

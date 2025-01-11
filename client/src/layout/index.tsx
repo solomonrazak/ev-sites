@@ -3,10 +3,10 @@ import Sidebar from "../components/sidebar";
 import Navbar from "../components/navbar";
 import { Outlet } from "react-router-dom";
 
-const Layout:React.FC = () => {
+const Layout: React.FC = () => {
   return (
     <div className="flex w-full h-full min-h-full">
-      <div className="w-[16%] border-r border-white h-screen">
+      <div className="w-[16%] border-r border-white">
         <Sidebar />
       </div>
       <div className="w-[84%]">

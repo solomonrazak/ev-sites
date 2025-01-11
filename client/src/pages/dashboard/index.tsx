@@ -6,7 +6,7 @@ import ActiveSubscriptions from "../../components/activeSubscriptions";
 
 const Dashboard: React.FC = () => {
   return (
-    <div className="grid grid-cols-2 grid-rows-5 w-full gap-5 items-stretch">
+    <div className="grid grid-cols-2 grid-rows-5 w-full gap-5 items-stretch h-full">
       <div className="row-start-1 row-span-3">
         <TotalCharges />
       </div>
