@@ -11,8 +11,8 @@ import Avatars from "./Avatars";
 
 const CusTable = () => {
   return (
-    <div className="flex flex-col gap-3 mt-3 overflow-x-auto">
-        <div className="min-w-[800px] overflow-x-auto">
+    <div className="flex flex-col gap-3 mt-3 ">
+        <div className="min-w-[800px]">
       <Table
         aria-label="Example static collection table"
         defaultSelectedKeys={["2", "3"]}

@@ -6,6 +6,7 @@ const Navbar: React.FC<{toggleSidebar: () => void}> = ({toggleSidebar}) => {
   const location = useLocation();
 
   const routeNames: Record<string, string> = {
+   
     "/dashboard": "Dashboard",
     "/customers": "Customers",
     "/charging-points": "Charging Points",
@@ -20,7 +21,7 @@ const Navbar: React.FC<{toggleSidebar: () => void}> = ({toggleSidebar}) => {
   const initial = name.charAt(0);
 
   return (
-    <div className="py-2 px-4 border-b flex justify-between border-white w-full">
+    <div className="py-2 px-4 border-b flex justify-between border-white w-full fixed top-0 bg-gray-600">
       <div className="flex items-center gap-2">
       <IoMenuSharp className="text-[20px] md:hidden cursor-pointer" onClick={toggleSidebar}/>
       <p className="font-medium">{currentPage}</p>

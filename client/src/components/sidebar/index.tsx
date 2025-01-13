@@ -10,8 +10,9 @@ const Sidebar: React.FC<{isOpen: boolean}> = ({isOpen}) => {
   const [showOnDesk, setShowOnDesk] = useState(true);
   const [showOnMob, setShowOnMob] = useState(false);
   return (
-    <div className={`p-4 h-full flex flex-col min-h-full ${isOpen ? "block" : "hidden"} md:block`}>
+    <div className="p-4 h-full flex justify-between flex-col min-h-full">
       <p className="text-center pb-4 hidden md:block">Logo</p>
+      
       <div className="flex-grow">
         {/* flex-grow so it can occupy the full length so logout can stay at the bottom */}
         <div className="flex flex-col gap-5">
@@ -69,11 +70,11 @@ const Sidebar: React.FC<{isOpen: boolean}> = ({isOpen}) => {
           </NavLink>
         </div>
       </div>
-      <div className="flex items-center gap-1 pb-5">
+      <div className="flex items-center gap-1 pb-5 mt-auto">
         <CiLogin />
         <p>Logout</p>
       </div>
-      {showOnMob && (
+      {/* {showOnMob && (
         <div>
           <div className="flex flex-col gap-5">
             <NavLink
@@ -130,7 +131,8 @@ const Sidebar: React.FC<{isOpen: boolean}> = ({isOpen}) => {
             </NavLink>
           </div>
         </div>
-      )}
+      )} */}
+      
     </div>
   );
 };

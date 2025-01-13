@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import Layout from "./layout";
 import Dashboard from "./pages/dashboard";
 import Customers from "./pages/customers";
@@ -12,6 +12,10 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
+        element: <Navigate to="/dashboard" replace />, // to render dashboard as default first page
+      },
+      {
+        
         path: "/dashboard",
         element: <Dashboard />,
       },
