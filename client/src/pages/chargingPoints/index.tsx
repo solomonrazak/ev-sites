@@ -3,9 +3,12 @@ import ChargeCard from "../../components/chargeCard";
 import { MdBatteryCharging20 } from "react-icons/md";
 import { MdBatteryAlert } from "react-icons/md";
 import { BsTools } from "react-icons/bs";
+import ChargeTable from "../../components/chargeTable";
+
 
 const ChargingPoints: React.FC = () => {
   return (
+    <div>
     <div className="mt-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
       <ChargeCard
         name="Active Charging Points"
@@ -28,6 +31,8 @@ const ChargingPoints: React.FC = () => {
         total={0}
         icon={<MdBatteryCharging20 size={35} />}
       />
+    </div>
+    <ChargeTable />
     </div>
   );
 };
