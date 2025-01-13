@@ -6,16 +6,16 @@ import ActiveSubscriptions from "../../components/activeSubscriptions";
 
 const Dashboard: React.FC = () => {
   return (
-    <div className="grid grid-cols-2 grid-rows-5 w-full gap-5 items-stretch h-full">
-      <div className="row-start-1 row-span-3">
+    <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-5 item-start h-full mt-10 ">
+      <div className="">
         <TotalCharges />
       </div>
 
-      <div className="flex gap-3 row-start-1 row-span-2">
+      <div className="flex flex-col md:flex-col xl:flex-row gap-3 ">
         <ActiveCard title="Active Charge Point" />
         <ActiveSubscriptions />
       </div>
-      <div className="flex gap-3 row-start-4 row-span-2">
+      <div className="flex flex-col md:flex-col xl:flex-row gap-3">
         <DonutChart
           topText="Opportunities"
           value={70}
@@ -35,7 +35,7 @@ const Dashboard: React.FC = () => {
           backgroundColor={["#4CAF50", "#E0E0E0"]}
         />
       </div>
-      <div className="row-start-3 row-span-3">
+      <div className="">
         <TotalCharges />
       </div>
     </div>

@@ -9,7 +9,7 @@ import CustomerTable from "../../components/customerTable";
 const Customers: React.FC = () => {
   return (
     <div>
-      <div className="grid lg:grid-cols-2 xlg:grid-cols-3 grid-rows-2 gap-5">
+      <div className="grid lg:grid-cols-2 xl:grid-cols-3 grid-rows-2 gap-5">
         <CustomCard
           percentage={20}
           name="Total Customers"

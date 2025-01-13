@@ -2,6 +2,7 @@ import React from 'react';
 
 interface IActiveCardProps {
     title: string;
+    
 }
 
 const ActiveCard: React.FC<IActiveCardProps> = ({title}) => {

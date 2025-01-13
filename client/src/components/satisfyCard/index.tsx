@@ -7,9 +7,9 @@ const SatisfyCard: React.FC = () => {
   return (
     <div className="bg-[#333333] h-60 p-3 rounded-md">
         <p>Customer Satisfaction</p>
-        <div className="flex mt-6 gap-5">
+        <div className="flex mt-6 justify-between">
             <img src={tapIcon} alt="tapIcon" width={120} height={100}/>
-            <div className="flex flex-col justify-between gap-5">
+            <div className="flex flex-col pr-5 justify-between gap-5">
                 <div className="flex gap-2">
                   <LuThumbsUp className="text-green-500 text-6xl"/>
                   <div>
