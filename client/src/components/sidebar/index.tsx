@@ -70,8 +70,8 @@ const Sidebar: React.FC<{isOpen: boolean}> = ({isOpen}) => {
           </NavLink>
         </div>
       </div>
-      <div className="flex items-center gap-1 pb-5 mt-auto">
-        <CiLogin />
+      <div className="flex items-center justify-center gap-2 pb-5 mt-auto">
+        <CiLogin className="text-[20px] mt-1"/>
         <p>Logout</p>
       </div>
       {/* {showOnMob && (

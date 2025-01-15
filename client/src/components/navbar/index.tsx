@@ -10,6 +10,7 @@ const Navbar: React.FC<{toggleSidebar: () => void}> = ({toggleSidebar}) => {
     "/dashboard": "Dashboard",
     "/customers": "Customers",
     "/charging-points": "Charging Points",
+    "/charging-points/charging-site": "Charging Points",
     "/wallet": "Wallet",
   };
 

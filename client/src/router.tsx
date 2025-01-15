@@ -4,6 +4,7 @@ import Dashboard from "./pages/dashboard";
 import Customers from "./pages/customers";
 import ChargingPoints from "./pages/chargingPoints";
 import Wallet from "./pages/wallet";
+import ChargingSite from "./pages/chargingSite";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,12 @@ const router = createBrowserRouter([
       {
         path: "/charging-points",
         element: <ChargingPoints />,
+        children: [
+          {
+            path: "charging-site",
+            element: <ChargingSite />
+          },
+        ]
       },
       {
         path: "/wallet",
