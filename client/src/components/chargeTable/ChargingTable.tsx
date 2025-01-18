@@ -13,7 +13,7 @@ import {
 
 const ChargingTable = () => {
   return (
-    <div className="flex flex-col gap-3 mt-3 ">
+    <div className="flex flex-col gap-3 mt-3 pb-5">
         <div className="min-w-[800px]">
       <Table
         aria-label="Example static collection table"
@@ -35,8 +35,8 @@ const ChargingTable = () => {
             <TableCell>8</TableCell>
             <TableCell>1 new site</TableCell>
             <TableCell>KNUST</TableCell>
-            <TableCell><div className="flex w-24 items-center justify-center gap-1 text-red-500 border border-red-500 py-1 bg-gray-300 rounded-[16px]"><GiCancel /><p>Offline</p></div></TableCell>
-            <TableCell><div className="flex w-28 py-1 items-center justify-center gap-1 text-green-500 border border-green-500 bg-gray-300 rounded-[16px]"><IoIosCheckmarkCircle /><p>Accepted</p></div></TableCell>
+            <TableCell><div className="flex w-20 items-center justify-center gap-1 text-red-500 border border-red-500 py-1 bg-gray-300 rounded-[16px]"><GiCancel className='mt-[1.5px]'/><p className="">Offline</p></div></TableCell>
+            <TableCell><div className="flex w-24 py-1 items-center justify-center gap-1 text-green-500 border border-green-500 bg-gray-300 rounded-[16px]"><IoIosCheckmarkCircle className='mt-[1.5px]'/><p>Accepted</p></div></TableCell>
             <TableCell>Jan 17, 2025</TableCell>
             <TableCell className=""><BsThreeDotsVertical className="ml-4 text-[20px]"/></TableCell>
           </TableRow>

@@ -7,7 +7,7 @@ import ChargingSiteTable from "./ChargingSiteTable";
 
 const ChargingSite = () => {
   return (
-    <div className="w-full bg-main-dark-bg rounded-md mt-5 px-3 overflow-x-auto">
+    <div className="w-full bg-main-dark-bg rounded-md mt-2 px-3 overflow-x-auto pb-5">
       <div className="flex md:justify-between gap-3 mt-3">
         <div className="flex gap-2">
           <SearchInput value="" placeholder="Search charging point..." />

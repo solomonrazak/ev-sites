@@ -12,7 +12,7 @@ import ChargingSite from "../../components/chargingSite";
 
 const ChargingPoints: React.FC = () => {
   return (
-    <div>
+    <div className="">
     <div className="mt-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
       <ChargeCard
         name="Active Charging Points"
