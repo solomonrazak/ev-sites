@@ -22,7 +22,7 @@ const Navbar: React.FC<{toggleSidebar: () => void}> = ({toggleSidebar}) => {
   const initial = name.charAt(0);
 
   return (
-    <div className="py-2 px-4 border-b flex justify-between border-white w-full fixed top-0 bg-gray-600">
+    <nav className="py-2 px-4 border-b flex justify-between border-white w-full fixed top-0 bg-gray-600">
       <div className="flex items-center gap-2">
       <IoMenuSharp className="text-[20px] md:hidden cursor-pointer" onClick={toggleSidebar}/>
       <p className="font-medium">{currentPage}</p>
@@ -31,7 +31,7 @@ const Navbar: React.FC<{toggleSidebar: () => void}> = ({toggleSidebar}) => {
         <div className="w-7 h-7 flex justify-center items-center font-medium bg-green-400 text-white rounded-full border border-white">{initial}</div>
         <p className="font-medium">{name}</p>
       </div>
-    </div>
+    </nav>
   );
 };
 

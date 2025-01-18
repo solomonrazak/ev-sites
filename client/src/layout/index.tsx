@@ -12,9 +12,9 @@ const Layout: React.FC = () => {
 
   return (
     <div className="flex w-screen h-screen bg-[#242424] text-white">
-      <div className="w-0 md:w-[14%] md:border-r border-white z-50 h-full">
+      <aside className="w-0 md:w-[14%] md:border-r border-white z-50 h-full">
         <Sidebar isOpen={isSidebarOpen}/>
-      </div>
+      </aside>
       <div className="w-full md:w-[86%] h-full overflow-y-auto">
         {/* used overflow-y-auto to resolve overlow on y-axis issue on mobile screens*/}
         <Navbar toggleSidebar={toggleSidebar}/>

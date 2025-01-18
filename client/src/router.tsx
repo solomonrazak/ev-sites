@@ -4,7 +4,8 @@ import Dashboard from "./pages/dashboard";
 import Customers from "./pages/customers";
 import ChargingPoints from "./pages/chargingPoints";
 import Wallet from "./pages/wallet";
-import ChargingSite from "./pages/chargingSite";
+import ChargingSites from "./pages/chargingSite";
+import ChargeTable from "./components/chargeTable";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,6 @@ const router = createBrowserRouter([
         element: <Navigate to="/dashboard" replace />, // to render dashboard as default first page
       },
       {
-        
         path: "/dashboard",
         element: <Dashboard />,
       },
@@ -27,12 +27,17 @@ const router = createBrowserRouter([
       {
         path: "/charging-points",
         element: <ChargingPoints />,
+
         children: [
           {
-            path: "charging-site",
-            element: <ChargingSite />
+            index: true,
+            element: <ChargeTable />,
           },
-        ]
+          {
+            path: "charging-site",
+            element: <ChargingSites />,
+          },
+        ],
       },
       {
         path: "/wallet",

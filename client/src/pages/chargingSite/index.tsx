@@ -1,11 +1,8 @@
 import React from 'react'
+import ChargingSite from '../../components/chargingSite'
 
-const ChargingSite = () => {
-  return (
-    <div>
-        <p>This si the charging site</p>
-    </div>
-  )
+const ChargingSites = () => {
+  return <ChargingSite />
 }
 
-export default ChargingSite;
+export default ChargingSites
