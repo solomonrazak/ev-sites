@@ -16,6 +16,7 @@ import {
   Button,
   useDisclosure,
 } from "@heroui/react";
+import InputField from "../ui/InputField";
 
 const ChargeTable: React.FC = () => {
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
@@ -39,36 +40,31 @@ const ChargeTable: React.FC = () => {
           <MdOutlineAddBox className="text-[22px] hidden md:block" />
           Add
         </Button>
-        <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+        <Modal isOpen={isOpen} onOpenChange={onOpenChange} className="min-w-[670px]">
         <ModalContent>
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1">Add Charge Point</ModalHeader>
               <ModalBody>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus non
-                  risus hendrerit venenatis. Pellentesque sit amet hendrerit risus, sed porttitor
-                  quam.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus non
-                  risus hendrerit venenatis. Pellentesque sit amet hendrerit risus, sed porttitor
-                  quam.
-                </p>
-                <p>
-                  Magna exercitation reprehenderit magna aute tempor cupidatat consequat elit dolor
-                  adipisicing. Mollit dolor eiusmod sunt ex incididunt cillum quis. Velit duis sit
-                  officia eiusmod Lorem aliqua enim laboris do dolor eiusmod. Et mollit incididunt
-                  nisi consectetur esse laborum eiusmod pariatur proident Lorem eiusmod et. Culpa
-                  deserunt nostrud ad veniam.
-                </p>
+                <div className="flex gap-5">
+                  <div>
+                    <InputField type="text" label="CHARGE POINT NAME"/>
+                    <InputField type="text" label="LOCATION"/>
+                    <InputField type="text" label="STREET"/>
+                    <InputField type="text" label="COUNTRY"/>
+                  </div>
+                  <div>
+                  <InputField type="text" label="COMPANY NAME"/>
+                  <InputField type="text" label="CITY"/>
+                  <InputField type="text" label="DIGITAL ADDRESS"/>
+                  <InputField type="text" label="DESCRIPTION"/>
+                  </div>
+                </div>
               </ModalBody>
               <ModalFooter>
-                <Button color="danger" variant="light" onPress={onClose}>
-                  Close
-                </Button>
+                
                 <Button color="primary" onPress={onClose}>
-                  Action
+                  Submit
                 </Button>
               </ModalFooter>
             </>

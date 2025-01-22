@@ -3,8 +3,8 @@ import { Input } from "@heroui/input";
 
 interface InputFieldProps {
   type?: string;
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  value?: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
   label: string;
   description?: string;
@@ -27,6 +27,7 @@ const InputField: React.FC<InputFieldProps> = ({
       label={label}
       labelPlacement="outside" 
       description={description} 
+      className="w-[300px]"
     />
   );
 };
