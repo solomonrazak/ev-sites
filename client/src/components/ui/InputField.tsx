@@ -1,8 +1,6 @@
 import React from "react";
 import { Input } from "@heroui/input";
 
-
-
 interface InputFieldProps {
   type?: string;
   value: string;

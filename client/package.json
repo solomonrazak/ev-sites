@@ -10,7 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@heroui/button": "^2.2.10",
     "@heroui/input": "^2.4.10",
+    "@heroui/modal": "^2.2.8",
+    "@heroui/react": "^2.6.14",
     "@heroui/system": "^2.4.7",
     "@heroui/theme": "^2.4.6",
     "@nextui-org/avatar": "^2.2.6",
@@ -19,7 +22,7 @@
     "@nextui-org/table": "^2.2.8",
     "@nextui-org/theme": "^2.4.5",
     "chart.js": "^4.4.7",
-    "framer-motion": "^11.15.0",
+    "framer-motion": "^11.18.2",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",

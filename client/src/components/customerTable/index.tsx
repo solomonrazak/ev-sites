@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../ui/Button';
+import Button from '../ui/Buttons';
 import { MdOutlineAddBox } from "react-icons/md";
 import CusTable from './CusTable';
 import SearchInput from '../ui/SearchInput';
