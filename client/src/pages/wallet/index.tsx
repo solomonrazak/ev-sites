@@ -1,9 +1,10 @@
 import React from 'react'
+import WalletPage from '../../features/wallet';
 
 const Wallet = () => {
   return (
     <div>
-        <p>this is the wallet page</p>
+        <WalletPage />
     </div>
   )
 }
