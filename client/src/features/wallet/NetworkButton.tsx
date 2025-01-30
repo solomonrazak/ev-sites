@@ -30,7 +30,7 @@ const NetworkButton: React.FC<NetworkButtonProps> = ({
       />
       <p className="text-[17px]">{name}</p>
       <FaCircleCheck
-        className={`text-[#191970] text-[18px] ${
+        className={`text-[#191970] mt-1 text-[18px] ${
           isActive ? "block" : "hidden"
         }`}
       />

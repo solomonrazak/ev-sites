@@ -93,27 +93,29 @@ const WalletPage = () => {
           <p className="mb-2">Choose Network</p>
           <div className="w-full lg:w-[88%]">
             <div>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              <NetworkButton
-                image={mtn}
-                name="MTN"
-                isActive={selectedNetwork === "MTN"}
-                onClick={() => handleNetworkClick("MTN")}
-              />
-              <NetworkButton
-                image={voda}
-                name="Vodafone"
-                isActive={selectedNetwork === "Vodafone"}
-                onClick={() => handleNetworkClick("Vodafone")}
-              />
-              <NetworkButton
-                image={at}
-                name="AirtelTigo"
-                isActive={selectedNetwork === "AirtelTigo"}
-                onClick={() => handleNetworkClick("AirtelTigo")}
-              />
-            </div>
-            <p className="text-red-500 text-[11px] mt-2">{errors.network?.message}</p>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <NetworkButton
+                  image={mtn}
+                  name="MTN"
+                  isActive={selectedNetwork === "MTN"}
+                  onClick={() => handleNetworkClick("MTN")}
+                />
+                <NetworkButton
+                  image={voda}
+                  name="Vodafone"
+                  isActive={selectedNetwork === "Vodafone"}
+                  onClick={() => handleNetworkClick("Vodafone")}
+                />
+                <NetworkButton
+                  image={at}
+                  name="AirtelTigo"
+                  isActive={selectedNetwork === "AirtelTigo"}
+                  onClick={() => handleNetworkClick("AirtelTigo")}
+                />
+              </div>
+              <p className="text-red-500 text-[11px] mt-2">
+                {errors.network?.message}
+              </p>
             </div>
             <div className="mt-5 flex flex-col gap-4">
               <div>
@@ -141,7 +143,6 @@ const WalletPage = () => {
                 </p>
               </div>
               <button
-              
                 type="submit"
                 className="bg-blue-700 w-16 px-1 py-1 rounded-[5px] justify-end text-[17px] ml-auto"
               >
