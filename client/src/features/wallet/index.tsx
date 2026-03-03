@@ -31,7 +31,7 @@ type FormData = {
   network: string;
 };
 
-const WalletPage = () => {
+const WalletPage:React.FC = () => {
   // React Hook Form
   const {
     register,

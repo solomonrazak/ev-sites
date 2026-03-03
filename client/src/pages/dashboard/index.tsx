@@ -11,7 +11,7 @@ const Dashboard: React.FC = () => {
         <div>
           <TotalCharges />
         </div>
-        <div className="grid xl:grid-cols-3 gap-4">
+        <div className="grid xl:grid-cols-3 gap-5">
           <DonutChart
             topText="Opportunities"
             value={70}
@@ -33,7 +33,7 @@ const Dashboard: React.FC = () => {
         </div>
       </section>
       <section className="space-y-4">
-        <div className="grid xl:grid-cols-2 gap-4">
+        <div className="grid xl:grid-cols-2 gap-5">
           <ActiveCard title="Active Charge Point" />
           <ActiveSubscriptions />
         </div>
